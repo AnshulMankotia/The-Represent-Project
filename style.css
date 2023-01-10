@@ -305,3 +305,103 @@ gap: 0.67rem;
     text-transform: uppercase;
 }
 /* section 6 stylings ends */
+
+
+/* section 8 stylings starts */
+.section8{
+    min-height: 70vh;
+}
+.section8 .heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section8 .heading span:nth-child(1){
+    font-size:0.8125rem;
+}
+.section8 .heading span:nth-child(2){
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+.fall-winter{
+ gap: 2rem;
+}
+.owl-carousel .item .price{
+    gap: 0.67rem;
+    margin-top: var(--spacer);
+}
+.owl-carousel .item .price >span:nth-child(1){
+    font-size:0.6875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.owl-carousel .item .price >span:nth-child(2){
+    font-size:0.6875rem;
+    text-transform: uppercase;
+}
+
+/* section 8 stylings ends */
+
+
+/* section9 styling starts */
+.section9{
+    min-height: 70vh;
+}
+.section9 .heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section9 .heading span:nth-child(1){
+    font-size:0.8125rem;
+}
+.section9 .heading span:nth-child(2){
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+.inside-rep{
+ gap: 2rem;
+}
+.columns-7{
+grid-template-columns: repeat(4,1fr);
+gap: 0.67rem;
+}
+.columns-7 .column{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* section9 styling ends */
+
+/* section 10 */
+.section10{
+    min-height: 70vh;
+}
+.section10 .heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section10 .heading span:nth-child(1){
+    font-size:0.8125rem;
+}
+.section10 .heading span:nth-child(2){
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+.shop-insta{
+ gap: 2rem;
+ align-items: center;
+}
+.section10 .button1{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/* section 10 */
