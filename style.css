@@ -1,0 +1,307 @@
+/* general css */
+
+:root{
+    --black-clr:#000;
+    --offwhite-clr:#f7f7f7;
+    --spacer:0.67rem;
+}
+*
+,*::after
+,*::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-size: 0.6875rem;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.grid-row{
+    display: grid;
+}
+section{
+    padding-bottom: 2rem;
+}
+.container{
+    padding: 0rem 0.67rem;
+    min-height: inherit;
+}
+img,svg,picture{
+    width: 100%;
+    display: block;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* general css ends */
+
+
+.header{
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    min-height: 15vh;
+    width: 100%;
+    background-color: white;
+}
+
+.blackbar{
+    background-color: black;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+.blackbar>span{
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+height: inherit;
+text-transform: uppercase;
+}
+.navLinks{
+    padding: 1.5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+.nav-list{
+    gap: 2rem;
+}
+.nav-list>li>a:nth-of-type(n){
+    text-transform: uppercase;
+    color: var(--black-clr);
+}
+.logo h1{
+text-transform: uppercase;
+font-size: 1.2rem;
+}
+.offer-section{
+    background-color: var(--offwhite-clr);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Header styling ended */
+
+/* section 1 styling */
+.section1{
+    min-height: 100vh;
+    margin-top: 10rem;
+}
+.columns-1{
+    gap:var(--spacer);
+}
+/* section 1 styling ended */
+
+/* section 2 styling starts */
+.section2{
+    min-height: 70vh;
+}
+.section2 .heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section2 .heading span:nth-child(1){
+    font-size:0.8125rem;
+}
+.section2 .heading span:nth-child(2){
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+.arrivals{
+ gap: 2rem;
+}
+.columns-2{
+grid-template-columns: repeat(4,1fr);
+gap: 0.67rem;
+}
+.columns-2 .column{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.columns-2 .column .image{
+    background-color: var(--offwhite-clr);
+}
+.columns-2 .column::after{
+    content: "\f004";
+    position: absolute;
+    top: 3%;
+    right:3%;
+}
+.columns-2 .column::before{
+    content: "SALE";
+    position: absolute;
+    top: 3%;
+    left:3%;
+}
+.columns-2 .column .price{
+    gap: 0.67rem;
+    margin-top: var(--spacer);
+}
+.columns-2 .column .price >span:nth-child(1){
+    font-size:0.6875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.columns-2 .column .price >span:nth-child(2){
+    font-size:0.6875rem;
+    text-transform: uppercase;
+}
+/* section 2 styling ended */
+
+
+
+/* section3 styling starts */
+.section3{
+    min-height: 100vh;
+}
+.column-3{
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--spacer);
+}
+.column-3 #column1{
+    grid-column: 1/4;
+}
+.column-3 #column5{
+    grid-column: 1/4;
+}
+.column-3 #column6{
+    grid-column: 1/4;
+}
+
+/* section3 styling ends */
+
+
+/* section 4 stylings starts */
+.section4{
+    min-height: 70vh;
+}
+.section4 .heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section4 .heading span:nth-child(1){
+    font-size:0.8125rem;
+}
+.section4 .heading span:nth-child(2){
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+.footwear{
+ gap: 2rem;
+}
+.columns-4{
+grid-template-columns: repeat(4,1fr);
+gap: 0.67rem;
+}
+.columns-4 .column{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.columns-4 .column .image{
+    background-color: var(--offwhite-clr);
+}
+.columns-4 .column::after{
+    content: "\f004";
+    position: absolute;
+    top: 3%;
+    right:3%;
+}
+.columns-4 .column::before{
+    content: "SALE";
+    position: absolute;
+    top: 3%;
+    left:3%;
+}
+.columns-4 .column .price{
+    gap: 0.67rem;
+    margin-top: var(--spacer);
+}
+.columns-4 .column .price >span:nth-child(1){
+    font-size:0.6875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.columns-4 .column .price >span:nth-child(2){
+    font-size:0.6875rem;
+    text-transform: uppercase;
+}
+/* section 4 stylings ends */
+
+
+/* section 6 stylings starts */
+.section6{
+    min-height: 70vh;
+}
+.section6 .heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section6 .heading span:nth-child(1){
+    font-size:0.8125rem;
+}
+.section6 .heading span:nth-child(2){
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+.owners-club{
+ gap: 2rem;
+}
+.columns-6{
+grid-template-columns: repeat(4,1fr);
+gap: 0.67rem;
+}
+.columns-6 .column{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.columns-6 .column .image{
+    background-color: var(--offwhite-clr);
+}
+.columns-6 .column::after{
+    content: "\f004";
+    position: absolute;
+    top: 3%;
+    right:3%;
+}
+.columns-6 .column::before{
+    content: "SALE";
+    position: absolute;
+    top: 3%;
+    left:3%;
+}
+.columns-6 .column .price{
+    gap: 0.67rem;
+    margin-top: var(--spacer);
+}
+.columns-6 .column .price >span:nth-child(1){
+    font-size:0.6875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.columns-6 .column .price >span:nth-child(2){
+    font-size:0.6875rem;
+    text-transform: uppercase;
+}
+/* section 6 stylings ends */
