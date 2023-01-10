@@ -95,6 +95,57 @@ font-size: 1.2rem;
 }
 /* Header styling ended */
 
+/* COLLECTION-SECTION CSS */
+.header .coll:hover + .section-collection{
+    display: block;
+   
+  }
+  .section-collection:hover{
+      display: block;
+  }
+  .section-collection{
+      position: absolute;
+      background: rgb(255, 255, 255);
+      z-index: 1000;
+      top: 66%;
+      left: 0;
+      padding: 1rem;
+      width: 100%;
+      height: auto; 
+      display: none;
+      box-shadow: 0px 15px 10px -15px #111; 
+  }
+  
+  
+  .section-collection .column .grid-row{
+      grid-template-columns: repeat(4,1fr);
+      gap: 1rem;
+  }
+  
+  .section-collection .column:first-child{
+      margin-bottom: 1rem;
+  }
+  
+  .section-collection a{
+      color: var(--black-clr);
+      line-height: 1.5;
+      text-transform: uppercase;
+  }
+  
+  .section-collection p{
+      margin-top: 0.5rem;
+  }
+  
+  .bold{
+      font-weight: bold;
+  }
+  
+  .section-collection a:hover{
+      opacity: .8;
+  }
+  /* /COLLECTION-SECTION CSS */
+  
+
 /* section 1 styling */
 .section1{
     min-height: 100vh;
