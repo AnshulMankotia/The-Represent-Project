@@ -10,6 +10,12 @@
    .section4 .columns-4{
     grid-template-columns: repeat(2,1fr);
    }
+   .container2 .container1{
+    position: static;
+   }
+    .tile2{
+      display: none;
+    }
 
    .section6 .columns-6{
     grid-template-columns: repeat(2,1fr);
@@ -51,20 +57,37 @@
         min-height: 0;
     }
     .section2 .columns-2{
-     grid-template-columns: repeat(1,1fr);
+     grid-template-columns: repeat(2,1fr);
  
     } 
  
     .section4 .columns-4{
-     grid-template-columns: repeat(1,1fr);
+     grid-template-columns: repeat(2,1fr);
     }
+   .container2 .container1{
+    position: static;
+   }
+    .tile2{
+      display: none;
+    }
+    .container1 .content2 {
+      margin: 1rem 0rem;
+      display: flex;
+      gap: 1rem;
+      background-color: white;
+  }
+  .container2 .content2 button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 0.5rem;
+}
  
     .section6 .columns-6{
-     grid-template-columns: repeat(1,1fr);
+     grid-template-columns: repeat(2,1fr);
     }
  
     .section9 .columns-7{
-     grid-template-columns: repeat(1,1fr);
+     grid-template-columns: repeat(2,1fr);
     }
     .owl-carousel .owl-nav button.owl-prev{
         position: absolute !important;
