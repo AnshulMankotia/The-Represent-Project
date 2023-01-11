@@ -49,7 +49,6 @@
 }
 .owl-carousel .owl-item img {
   display: block;
-  height: 60vh;
   width: 100%;
   background-color: var(--offwhite-clr);
 }

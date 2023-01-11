@@ -15,6 +15,7 @@ box-sizing: border-box;
 body{
     font-size: 0.6875rem;
     font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+   
 }
 .flex-row{
     display: flex;
@@ -42,6 +43,10 @@ li{
 }
 a{
     text-decoration: none;
+}
+
+i{
+    font-family: 'FontAwesome';
 }
 
 /* general css ends */
@@ -250,6 +255,7 @@ gap: 0.67rem;
 }
 .columns-2 .column::after{
     content: "\f004";
+    font-family: FontAwesome;
     position: absolute;
     top: 3%;
     right:3%;
@@ -332,6 +338,7 @@ gap: 0.67rem;
 }
 .columns-4 .column::after{
     content: "\f004";
+    font-family: FontAwesome;
     position: absolute;
     top: 3%;
     right:3%;
@@ -392,6 +399,7 @@ gap: 0.67rem;
 }
 .columns-6 .column::after{
     content: "\f004";
+    font-family: FontAwesome;
     position: absolute;
     top: 3%;
     right:3%;
@@ -577,6 +585,7 @@ gap: 0.67rem;
     .cards li a img{
       filter: grayscale(1);
     }
+
   @media screen and (max-width:1024px) {
     .footer .flex-row{
       flex-direction: column;
@@ -588,3 +597,7 @@ gap: 0.67rem;
       }
   }
 /* ----//FOOTER--- */
+
+
+
+
