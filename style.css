@@ -372,8 +372,30 @@ img {
 .b-247:hover + .section-247 {
   display: block;
 }
-
 /* 247 SECTION */
+
+/* ACOUNT SETION */
+.section-account {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  z-index: 1000;
+  top: 67%;
+  left: 0;
+  padding: 1.2rem 2rem;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 15px 10px -15px #111;
+  transition: all 0.3s ease-in;
+  display: none;
+}
+
+.section-account ul{
+  justify-content: flex-end;
+}
+.account:hover + .section-account{
+  display: block;
+}
+/* /ACOUNT SETION */
 
 /* section 1 styling */
 .section1 {
@@ -403,6 +425,7 @@ section .about-item span:nth-of-type(n){
     font-size: 0.9rem;
     text-transform: uppercase;
 }
+
 .row {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -706,17 +729,7 @@ section .about-item span:nth-of-type(n){
   filter: grayscale(1);
 }
 
-@media screen and (max-width: 1024px) {
-  .footer .flex-row {
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 900px;
-  }
 
-  .footer .flex-row .column {
-    width: 100%;
-  }
-}
 
 /* ----//FOOTER--- */
 
@@ -862,77 +875,7 @@ section .about-item span:nth-of-type(n){
 
 /* adding date divs */
 
-/* media query for tablets */
-@media (max-width: 790px) {
-  .wrapper .center-line {
-    left: 40px;
-  }
 
-  .wrapper .row {
-    margin: 30px 0 3px 60px;
-  }
-
-  .wrapper .row section {
-    width: 100%;
-  }
-
-  .row-1 section::before {
-    left: -7px;
-  }
-
-  .date {
-    justify-content: flex-start;
-    margin-left: 1rem;
-  }
-
-  .row-1 section::after {
-    left: -50px;
-  }
-
-  .row-2 section::before {
-    left: -7px;
-  }
-
-  .row-2 section::after {
-    left: -50px;
-  }
-}
-
-/* media query for mobile */
-@media (max-width: 440px) {
-  .wrapper .center-line {
-    left: 40px;
-  }
-
-  .wrapper .row {
-    margin: 30px 0 3px 60px;
-  }
-
-  .wrapper .row section {
-    width: 100%;
-  }
-
-  .row-1 section::before {
-    left: -7px;
-  }
-
-  .date {
-    justify-content: flex-start;
-    margin-left: 1rem;
-  }
-
-  .row-1 section::after {
-    left: -50px;
-  }
-
-  .row-2 section::before {
-    left: -7px;
-  }
-
-  .row-2 section::after {
-    left: -50px;
-  }
-}
 
 /* //styling2-1 */
 
@@ -1156,7 +1099,6 @@ height:20rem;
  height: 15vw;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 05;
   padding: 0 2rem;
 }
 .row4 .button{
@@ -1312,22 +1254,27 @@ strong #grey{
   text-decoration: underline;
   color: rgb(109, 109, 109);
 }
-@media screen and (max-width:770px){
-  .signin .main .text-container input{
-  width:50vw;
-  }
 
-  .signin .main .text-container .signin{
-      width: 50vw;
-  }
-  .signin .main .text-container .input-style{
-      width:50vw;
-      }
-      .signin .main .text-container .name input{
-          width:24vw;
-          }
 
+/* SECTION T-SHIRTS CSS */
+.section-t-shirt{
+  width: 100%;
+  padding-top: 15rem;
 }
 
+.row{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  padding: 0.5rem;
+}
+/* /SECTION T-SHIRTS CSS */
 
 /* -----//sign in */
