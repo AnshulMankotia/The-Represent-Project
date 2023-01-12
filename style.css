@@ -106,9 +106,33 @@ i {
   color: var(--black-clr);
 }
 
-.logo h1 {
-  text-transform: uppercase;
-  font-size: 1.2rem;
+#naviBar {
+  padding: 2rem 0.8rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mainlogo {
+  width: 8rem;
+  opacity: 1;
+  margin-right: -6rem;
+}
+#mainlogo.active {
+  opacity: 0;
+}
+#mainlogo1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  display: none;
+  font-size: 2rem;
+  margin-right: -6rem;
+}
+#mainlogo1.active {
+  display: block;
 }
 
 .offer-section {
@@ -119,6 +143,7 @@ i {
   justify-content: center;
   padding: 0rem 0.67rem;
   text-align: center;
+  outline: 1px solid rgb(238, 233, 233);
 }
 
 /* Header styling ended */
@@ -219,12 +244,15 @@ i {
 .header .shop:hover + .shop-section {
   display: block;
 }
+.shop-section:hover {
+  display: block;
+}
 
 .shop-section {
   position: absolute;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  top: 50%;
+  top: 67%;
   left: 0;
   padding: 0rem 1rem;
   width: 100%;
@@ -295,7 +323,7 @@ img {
   position: absolute;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  top: 66%;
+  top: 67%;
   left: 0;
   padding: 1rem;
   width: 100%;
@@ -347,7 +375,9 @@ img {
   transition: all 0.3s ease-in;
   display: none;
 }
-
+.section-brand:hover {
+  display: block;
+}
 .brands:hover + .section-brand {
   display: block;
 }
@@ -368,7 +398,9 @@ img {
   transition: all 0.3s ease-in;
   display: none;
 }
-
+.section-247:hover {
+  display: block;
+}
 .b-247:hover + .section-247 {
   display: block;
 }
@@ -388,11 +420,13 @@ img {
   transition: all 0.3s ease-in;
   display: none;
 }
-
 .section-account ul{
   justify-content: flex-end;
 }
 .account:hover + .section-account{
+  display: block;
+}
+.section-account:hover{
   display: block;
 }
 /* /ACOUNT SETION */
@@ -434,7 +468,6 @@ section .about-item span:nth-of-type(n){
 .box {
   position: relative;
   display: inline-block;
-  overflow: hidden;
   color: black;
   border: 2px solid #fff;
 }
@@ -465,18 +498,51 @@ section .about-item span:nth-of-type(n){
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 /* tool tip */
-.box .content2 button::before{
-  content:"";
+#tooltip {
   position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  background-color: #282727;
+  color: white;
+  white-space: nowrap;
+  padding: 8px 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 12px;
 }
+#tooltip::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #282727;
+  top: 21px;
+  z-index: -1;
+  transform: rotate(45deg);
+  left: 33px;
+}
+.box .content2 button:hover #tooltip {
+  top: -140%;
+  opacity: 1;
+  visibility: visible;
+}
+.box .content2 button:hover {
+  outline: 1px solid black;
+}
+/* tool tip */
 
+/* adding heart icon over images */
 .box img {
   width: 100%;
   background: var(--offwhite-clr);
 }
-.box .image::before{
+.box .image::before {
   content: "\f004";
   font-family: FontAwesome;
   position: absolute;
@@ -499,6 +565,8 @@ section .about-item span:nth-of-type(n){
   opacity: 1;
   cursor: pointer;
 }
+/* //adding heart icon over images */
+
 /* section 2 styling ended */
 
 /* section3 styling starts */

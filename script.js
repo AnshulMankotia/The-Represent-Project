@@ -17,3 +17,17 @@ window.addEventListener("scroll" , ()=>{
      toTop.classList.remove("active")   
     }
 })
+
+// for main logo image
+const changeImg = document.querySelector("#mainlogo");
+const changeImg1 = document.querySelector("#mainlogo1");
+
+window.addEventListener("scroll" , ()=>{
+    if(window.pageYOffset >250){
+        changeImg.classList.add("active")
+        changeImg1.classList.add("active")
+    }else{
+     changeImg.classList.remove("active")   
+     changeImg1.classList.remove("active")   
+    }
+})
