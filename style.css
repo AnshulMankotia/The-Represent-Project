@@ -978,3 +978,356 @@ section .about-item span:nth-of-type(n){
 /* //back to top button */
 
 /* ABOUT SECTION STYLING ENDS */
+
+
+
+/* -----PRESTIGE -----*/
+.section-header{
+  place-items: center;
+
+  position: relative;
+}
+
+.section-header::before{ 
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ background-image: url(/images/prestiege-head.webp);
+ background-size: cover;
+
+}
+.section-header .flex-row{
+  justify-content: left;
+  flex-direction: column;
+ position: relative;
+}
+.section-header .content{
+position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 17% 7%;
+}
+.section-header .content h2,.section-header .content  p{
+  color: #ffffff;
+  margin-top: 1rem;
+}
+.section-header .content p{
+  line-height: 1.5;
+  font-size: 11px;
+}
+.section-header .contentimg{
+height: 60px;
+width: 180px;
+}
+.button{
+  display: flex;
+  gap:1rem;
+}
+.btn{
+width: 10rem;
+padding: 0.7rem 0;
+border: none;
+font-size: 11px;
+}
+
+/* main */
+.section-main{
+padding: 2rem 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.section-main .main-head-content{
+  text-align: center;
+margin-bottom: 4rem;
+line-height: 1.3rem;
+}
+.section-main .main-head-content p{
+  margin-top: 1rem;
+}
+.tiers{
+  padding-top: 1.2rem 0;
+}
+.main-bottom-content {
+padding-top: 1rem;
+margin-bottom: 5rem;
+}
+.main-bottom-content .column img{
+max-width: 120px;
+}
+.main-bottom-content .grid-row{
+ padding: 1rem 0;
+  grid-template-columns: repeat(5,1fr);
+  gap: 5rem;
+}
+.tiers-bold{
+  margin-bottom: 1rem;
+  }
+ span{
+  font-size: 10px;
+ }
+ span .bold{
+  font-size: 11px;
+  font-weight: bold;
+ }
+.main-bottom-content .column , .tiers-bold{
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: .5rem;
+}
+/* //main */
+
+/* ----PRESTIGE-FOOTER----- */
+.section-footer{
+padding: 0 .5rem;
+width: 100vw;
+height: 50vw;
+box-sizing: border-box;
+}
+.section-footer .grid-row{
+  grid-template-columns: 1fr 1fr 1fr;
+gap: .5rem;
+}
+.section-footer  p{
+  margin-top: 1rem;
+}
+.section-footer h3,.section-footer  p{
+  color: #fffefe;
+}
+.row1{
+
+  display: flex;
+ text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/images/prestige-row1.webp);
+  max-width: 33vw;
+  height: 33vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 2rem;
+}
+.row2{
+
+  display: flex;
+  text-align: center;
+   justify-content: center;
+   flex-direction: column;
+  background-image: url(/images/prestige-row2.webp);
+  max-width: 33vw;
+height: 33vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 2rem;
+}
+.row3{
+
+  display: flex;
+  text-align: center;
+   justify-content: center;
+   flex-direction: column;
+  background-image: url(/images/prestige-row3.webp);
+  max-width: 33vw;
+  height: 33vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 2rem;
+
+}
+.row4{
+  padding:0 7%;
+  margin-top: .6rem;
+height:20rem;
+  display: flex;
+  text-align: center;
+   justify-content: center;
+   flex-direction: column;
+  background-image: url(/images/prestige-row4.webp);
+  max-width: 1890px;
+ height: 15vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 05;
+  padding: 0 2rem;
+}
+.row4 .button{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* ----//PRESTIGE-FOOTER----- */
+/* -----//PRESTIGE -----*/
+
+
+
+
+/* -------------------------Brand-Media-css */
+.section-media{
+  padding: 3rem .5rem;
+}
+
+.section-media .head{
+padding-bottom: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.section-media .flex-row{
+
+  flex-wrap: wrap;
+  padding: 0 5px;
+
+}
+.section-media .flex-row .flex-column{
+
+flex: 25%;
+padding: 0 5px;
+margin: 0 auto;
+}
+.section-media .flex-row .flex-image{
+  overflow:hidden;
+  max-width: 100%;
+
+}
+.section-media .flex-row .flex-image img{
+width: 100%;
+filter: grayscale(100%);
+transition: 0.3s all ease-in-out;
+
+}
+.section-media .flex-row .flex-image img:hover{
+width: 100%;
+filter: grayscale(0%);
+transform: scale(1.05);
+}
+.section-media .flex-row .flex-data{
+  margin-bottom: 2rem;
+}
+.section-media .flex-row .flex-data .bold{
+  color: #000;
+}
+.section-media .flex-row .flex-data h3{
+  padding-top: .5rem;
+  font-size:11px;
+  color: rgb(118, 118, 118);
+}
+
+/* -------------------------///Brand-Media-css */
+/* sign in */
+.signin{
+  box-sizing: border-box;
+ padding: 7rem 3rem 3rem  3rem;
+}
+.signin .main .text-container .form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 2rem;
+text-align: center;
+}
+.signin .main .text-container h2{
+  margin-bottom: 1rem;
+}
+.signin .main .text-container form{
+
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signin .main .text-container a{
+font-size: 11px;
+  color: #000;
+  font-weight: bold;
+}
+
+.signin .main .text-container .input-style{
+  min-width: 216px;
+  padding-bottom: .7rem;
+  font-size: 11px;
+  width: 28vw;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--black-clr);
+}
+.signin .main .text-container input:focus{
+  outline: none;
+}
+.signin .main .text-container button{
+  width: 216px;
+  border: none;
+  padding: .7rem 0;
+  background-color: #000;
+  color:#fff;
+  margin-bottom: 1rem;
+  font-size: 11PX;
+}
+.signin .main .text-container .signin{
+  min-width: 216px;
+  margin-top: -.7rem;
+  width: 28vw;
+}
+
+.signin .main .text-container h4{
+  margin-bottom: 1rem;
+}
+.signin .main .text-container .create p{
+ margin-top: 1.5rem;
+ line-height: 2rem;
+}
+.signin .main .text-container .name {
+  display: flex;
+  gap: 1rem;
+}
+.signin .main .text-container .name input{
+
+  padding-bottom: .7rem;
+  font-size: 11px;
+  width: 13.6vw;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--black-clr);
+}
+.form form span{
+  line-height: 1.3rem;
+  font-size: 11px;
+}
+
+strong{
+  line-height: 1.5rem;
+}
+strong #grey{
+  text-decoration: underline;
+  color: rgb(109, 109, 109);
+}
+@media screen and (max-width:770px){
+  .signin .main .text-container input{
+  width:50vw;
+  }
+
+  .signin .main .text-container .signin{
+      width: 50vw;
+  }
+  .signin .main .text-container .input-style{
+      width:50vw;
+      }
+      .signin .main .text-container .name input{
+          width:24vw;
+          }
+
+}
+
+
+/* -----//sign in */
