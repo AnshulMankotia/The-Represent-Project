@@ -252,9 +252,9 @@ i {
   position: absolute;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  top: 67%;
+  top: 56%;
   left: 0;
-  padding: 0rem 1rem;
+  padding: 1rem;
   width: 100%;
   height: auto;
   display: none;
@@ -323,7 +323,7 @@ img {
   position: absolute;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  top: 67%;
+  top: 56%;
   left: 0;
   padding: 1rem;
   width: 100%;
@@ -366,7 +366,7 @@ img {
   position: absolute;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  top: 67%;
+  top: 56%;
   left: 0;
   padding: 1.2rem 2rem;
   width: 100%;
@@ -389,7 +389,7 @@ img {
   position: absolute;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  top: 67%;
+  top: 56%;
   left: 0;
   padding: 1.2rem 2rem;
   width: 100%;
@@ -411,7 +411,7 @@ img {
   position: absolute;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  top: 67%;
+  top: 56%;
   left: 0;
   padding: 1.2rem 2rem;
   width: 100%;
@@ -658,22 +658,6 @@ section .about-item span:nth-of-type(n){
   min-height: 70vh;
 }
 
-.section9 .heading {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.section9 .heading span:nth-child(1) {
-  font-size: 0.8125rem;
-}
-
-.section9 .heading span:nth-child(2) {
-  font-size: 0.8125rem;
-  font-weight: bold;
-}
-
 .inside-rep {
   gap: 2rem;
 }
@@ -694,22 +678,6 @@ section .about-item span:nth-of-type(n){
 /* section 10 */
 .section10 {
   min-height: 70vh;
-}
-
-.section10 .heading {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.section10 .heading span:nth-child(1) {
-  font-size: 0.8125rem;
-}
-
-.section10 .heading span:nth-child(2) {
-  font-size: 0.8125rem;
-  font-weight: bold;
 }
 
 .shop-insta {
@@ -1236,7 +1204,8 @@ transform: scale(1.05);
 /* sign in */
 .signin{
   box-sizing: border-box;
- padding: 7rem 3rem 3rem  3rem;
+ /* padding: 7rem 3rem 3rem  3rem; */
+ margin-top: 13rem;
 }
 .signin .main .text-container .form{
 display: flex;
@@ -1327,7 +1296,7 @@ strong #grey{
 /* SECTION T-SHIRTS CSS */
 .section-t-shirt{
   width: 100%;
-  padding-top: 15rem;
+  margin-top: 15rem;
 }
 
 .row{
