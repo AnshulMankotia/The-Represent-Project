@@ -258,7 +258,8 @@ i {
   width: 100%;
   height: auto;
   display: none;
-  box-shadow: 0px 15px 10px -15px #111;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  transition: all 0.3s ease-in;
 }
 
 .shop-section a {
@@ -329,7 +330,9 @@ img {
   width: 100%;
   height: auto;
   display: none;
-  box-shadow: 0px 15px 10px -15px #111;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  transition: all 0.3s ease-in;
+
 }
 
 .section-collection .column .grid-row {
@@ -371,7 +374,7 @@ img {
   padding: 1.2rem 2rem;
   width: 100%;
   height: auto;
-  box-shadow: 0px 15px 10px -15px #111;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   transition: all 0.3s ease-in;
   display: none;
 }
@@ -394,7 +397,7 @@ img {
   padding: 1.2rem 2rem;
   width: 100%;
   height: auto;
-  box-shadow: 0px 15px 10px -15px #111;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   transition: all 0.3s ease-in;
   display: none;
 }
@@ -416,7 +419,7 @@ img {
   padding: 1.2rem 2rem;
   width: 100%;
   height: auto;
-  box-shadow: 0px 15px 10px -15px #111;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   transition: all 0.3s ease-in;
   display: none;
 }
@@ -1315,3 +1318,6 @@ strong #grey{
 /* /SECTION T-SHIRTS CSS */
 
 /* -----//sign in */
+
+
+/* owl carousel */
