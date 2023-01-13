@@ -1,8 +1,10 @@
 
 const navIcon=document.querySelector('.navIcon');
+const navIcon2=document.querySelector('.xmark');
 const navLinks=document.querySelector('.mobile-navs')
 navIcon.addEventListener('click',() => {
     navIcon.classList.toggle('active')
+    navIcon2.classList.toggle('active')
     navLinks.classList.toggle('active')
 })
 
@@ -17,6 +19,7 @@ window.addEventListener("scroll" , ()=>{
      toTop.classList.remove("active")   
     }
 })
+
 
 // for main logo image
 const changeImg = document.querySelector("#mainlogo");
