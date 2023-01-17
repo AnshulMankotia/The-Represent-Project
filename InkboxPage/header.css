@@ -318,22 +318,3 @@ gap: 1.2rem;
 
 
 /* MEDIA QUERY FOR tablet DESIGN */
-@media screen and (max-width:1156px) {
-    .navMenu nav > ul {
-        display: flex;
-        align-items: center;
-        overflow-x: scroll;
-        justify-content: space-between;
-    }
-    .navMenu nav>ul>li {
-        padding: 0rem 1.5rem 1rem 1.5rem;
-        white-space: nowrap;
-    }
-    .navMenu nav>ul>li:hover {
-        border-bottom: 0px solid transparent;
-    }
-    .secondaryNav .icons>i{
-        display: none;
-    }
-}
-/* //MEDIA QUERY FOR tablet DESIGN */
