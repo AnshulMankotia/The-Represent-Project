@@ -179,10 +179,11 @@ gap: 1.2rem;
 /* //secondary nav */
 .navMenu{
     height: 4vh;
+    display: block;
 }
 .navMenu.active{
-    display: none;
- }
+    display:none;
+}
 .navMenu nav > ul {
     display: flex;
     align-items: center;

@@ -35,13 +35,11 @@ window.addEventListener("scroll" , ()=>{
     }
 });
 
-
-
 const hideNav = document.querySelector(".navMenu");
 window.addEventListener("scroll" , ()=>{
     if(window.pageYOffset >500){
-        hideNav.classList.add("active")
+        hideNav.classList.remove("active")
     }else{
-     hideNav.classList.remove("active")     
+     hideNav.classList.add("active")     
     }
 });
