@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --line-height: 20px;
+  --listitem-size: 44px;
+  --navbar-size: 44px;
+  --color-border: #0000001a;
+  --color-button: #0000004d;
+  --color-text: #000000bf;
+  --color-text-dimmed: #0000004d;
+  --color-background: #f3f3f3;
+  --color-background-highlight: rgba(0, 0, 0, 0.05);
+  --color-background-emphasis: rgba(255, 255, 255, 0.4);
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+img,
+svg,
+picture {
+  width: 100%;
+  display: block;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Anitque Olive";
+  color: #212121;
+  line-height: 2rem;
+}
+
+li {
+  list-style: none;
+  font-family: Font Awesome 5 Free;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+span{
+    font-family: "Roboto", sans-serif;
+}
+
+/* =============GENERAL=========== CSS */
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 0rem 2rem;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
+i{
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+/* =============/GENERAL=========== CSS */
+header{
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: white;
+}
+header>section{
+    background-color: #f4f5f7;
+}
+.megaMenu {
+  justify-content: space-between;
+  min-height: 7vh;
+  gap: 1rem;
+}
+/* primary nav */
+.primaryNav {
+    margin-bottom: 1rem;
+}
+.primaryNav > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0rem;
+}
+.primaryNav ul>li{
+    font-size: 0.815rem;
+}
+.primaryNav ul>li:hover{
+opacity: 0.5;
+}
+/*// primary nav */
+/* secondary nav */
+.secondaryNav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.secondaryNav>.icons{
+display: flex;
+align-items: center;
+gap: 1.2rem;
+}
+.secondaryNav img{
+    width: 10rem;
+}
+.secondaryNav .search-bar{
+    position: relative;
+    width: 56%;
+}
+.secondaryNav .search-bar >input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid #c8c5c5;
+    outline: none;
+    padding: 1.3rem 1rem;
+    font-size: 1rem;
+}
+.secondaryNav .search-bar::after{
+    content: "\f002";
+    position: absolute;
+    right: 6%;
+    top: 30%;
+    font-family: FontAwesome;
+}
+.secondaryNav .icons span{
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+.secondaryNav .icons>i{
+    background-color:transparent;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+.secondaryNav .icons>i:hover{
+    background-color: rgb(236, 236, 236);
+}
+.secondaryNav .icons>a{
+    background-color:transparent;
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+.secondaryNav .icons>a:hover{
+    background-color: rgb(236, 236, 236);
+}
+/* //secondary nav */
+.navMenu{
+    height: 4vh;
+}
+.navMenu.active{
+    display: none;
+ }
+.navMenu nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navMenu nav>ul>li>a{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navMenu nav>ul>li{
+    padding: 0rem 1.5rem 1rem 1.5rem;
+    border-bottom: 3px solid transparent;
+}
+.navMenu nav>ul>li:hover{
+    border-bottom: 3px solid #f4d237;
+}
+.navMenu li> span>i{
+    margin-left: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in;
+}
+.navMenu ul> li:hover span>i{ 
+    transform: rotate(180deg);
+}
+
+
+/* STYLING DROPDOWN MENU WHATS'S NEW SECTION */
+.navMenu > .container{
+    position: relative;
+    z-index: 999;
+}
+.newSection{
+    position: absolute;
+    top: 80%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2rem 0rem;
+    justify-content: center;
+    z-index: -1;
+    width: 100%;
+    left: 0%;
+    gap: 4rem;
+    min-height:40vh;
+    transition: all 0.1s ease;
+    box-shadow: 0px 9px 17px -10px black;
+    background-color: white;
+}
+ .newSection >.header-span> ul > span{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.newSection >.header-span> ul>li{
+    font-size: 0.9rem;
+}
+.newSection >.header-span> ul>li:hover{
+    opacity: 0.5;
+}
+.newSection .nav-items{
+    height: 100%;
+    gap: 1.5rem;
+}
+.new:hover  .newSection {
+ top: 100%;
+ opacity: 1;
+ visibility: visible;
+}
+
+/* //STYLING DROPDOWN MENU WHATS'S NEW SECTION */
+
+/* STYLING DROPDOWN MENU SHOP SECTION */
+.shop:hover  .newSection {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+   }
+   
+/*// STYLING DROPDOWN MENU SHOP SECTION */
+
+
+/* STYLING DROPDOWN MENU CUSTOM SECTION */
+.custom:hover  .newSection {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+   }
+   .header-span >ul>img{
+    width: 15rem;
+    background: #9e9e9e;
+   }
+   .header-span >ul>p{
+   font-size: 0.9rem;
+   }
+   .header-span >ul span:last-child::after{
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-left: 1rem;
+   }
+/*// STYLING DROPDOWN MENU CUSTOM SECTION */
+
+/* STYLING DROPDOWN MENU TATTOO SECTION */
+.tattoo:hover  .newSection {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+   }
+   /* //STYLING DROPDOWN MENU TATTOO SECTION */
+
+
+/* STYLING DROPDOWN SALE TATTOO SECTION */
+.sale:hover  .newSection {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+   }
+/* //STYLING DROPDOWN SA TATTOO SECTION */
+
+/* STYLING DROPDOWN SALE TATTOO SECTION */
+.categories:hover  .newSection {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+   }
+/* //STYLING DROPDOWN SA TATTOO SECTION */
+
+
+
+/* MEDIA QUERY FOR tablet DESIGN */
+@media screen and (max-width:1156px) {
+    .navMenu nav > ul {
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        justify-content: space-between;
+    }
+    .navMenu nav>ul>li {
+        padding: 0rem 1.5rem 1rem 1.5rem;
+        white-space: nowrap;
+    }
+    .navMenu nav>ul>li:hover {
+        border-bottom: 0px solid transparent;
+    }
+    .secondaryNav .icons>i{
+        display: none;
+    }
+}
+/* //MEDIA QUERY FOR tablet DESIGN */

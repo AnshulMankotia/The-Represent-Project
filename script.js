@@ -6,7 +6,7 @@ navIcon.addEventListener('click',() => {
     navIcon.classList.toggle('active')
     navIcon2.classList.toggle('active')
     navLinks.classList.toggle('active')
-})
+});
 
 
 // for back to top button
@@ -18,7 +18,7 @@ window.addEventListener("scroll" , ()=>{
     }else{
      toTop.classList.remove("active")   
     }
-})
+});
 
 
 // for main logo image
@@ -33,4 +33,15 @@ window.addEventListener("scroll" , ()=>{
      changeImg.classList.remove("active")   
      changeImg1.classList.remove("active")   
     }
-})
+});
+
+
+
+const hideNav = document.querySelector(".navMenu");
+window.addEventListener("scroll" , ()=>{
+    if(window.pageYOffset >500){
+        hideNav.classList.add("active")
+    }else{
+     hideNav.classList.remove("active")     
+    }
+});

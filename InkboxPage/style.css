@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --line-height: 20px;
+    --listitem-size: 44px;
+    --navbar-size: 44px;
+    --color-border: #0000001a;
+    --color-button: #0000004d;
+    --color-text: #000000bf;
+    --color-text-dimmed: #0000004d;
+    --color-background: #f3f3f3;
+    --color-background-highlight: rgba(0, 0, 0, 0.05);
+    --color-background-emphasis: rgba(255, 255, 255, 0.4);
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    min-height: 100vh;
+
+}
+
+img,svg,picture{
+    width: 100%;
+    display: block;
+
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Antique Olive';
+    color: #212121; 
+    line-height: 2rem;
+}
+
+h1{
+    font-size: 2.25rem;
+  
+}
+
+h3{
+    font-size: 1.5rem;
+
+}
+
+/* =============GENERAL=========== CSS */
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.flex-row{
+    display: flex;
+}
+
+.grid-row{
+    display: grid;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.cta a{
+border-radius: 0.25rem;
+cursor: pointer;
+outline: 2px solid transparent;
+padding: 0.7rem 1.5rem ;
+text-transform: uppercase;
+transition-duration: .5s;
+font-family: 'Roboto';
+background: #212121;
+color: #ffff;
+text-decoration: none;
+box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+
+
+
+   
+}
+
+.cta a:hover{
+    background-color: rgba(0,0,0,.5);
+
+}
+/* =============/GENERAL=========== CSS */
+
+/*  HOME PAGE SECTION1 CSS */
+.section-one{
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
+}
+
+.section-one .flex-column{
+    gap: 1.5rem;
+}
+
+.section-one .flex-column .column:first-child{
+    background-image: url("./images/shorts1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 9rem;
+   
+}
+
+.section-one .flex-column .content-container{
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+  ;
+  justify-content: center;
+  min-height: 8rem;
+  align-items: center;
+  text-transform: uppercase;
+
+    
+}
+
+.section-one .flex-column .content-container h1{
+    color: #ffff;
+}
+
+ .zoom-container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+   
+   
+}
+
+
+.zoom-container img{
+    width: 100%;
+    height: 100%;
+    transition:all .3s ease-in-out;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0));
+   
+}
+
+ .zoom-container img:hover{
+   transform: scale(1.1);
+  
+}
+
+.zoom-container span{
+    position: absolute;
+    bottom:7%;
+    left: 7%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #212121;
+    font-weight: 900;
+}
+
+/*  /HOME PAGE SECTION1 CSS */
+
+
+/* HOME PAGE SECTION2 CSS */
+.section-two{
+    width: 100%;
+    height: auto;
+    margin: 6rem 0;
+}
+
+.section-two .container {
+    padding: 0 5rem;
+}
+
+.section-two .flex-column{
+    gap: 1.5rem;
+}
+.section-two .column .grid-row{
+    grid-template-columns: repeat(6,1fr);
+    gap: 0.5rem;
+}
+.section-two .image-container span{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+/* /HOME PAGE SECTION2 CSS */
+
+/* HOME PAGE SECTION3 CSS */
+.section-three{
+    width: 100%;
+    height: auto;
+    margin: 6rem 0;
+}
+
+.section-three .container{
+    padding: 0 5rem;
+}
+
+.section-three .flex-column{
+    gap: 2rem;
+}
+
+.section-three .column img{
+    height: 512px;
+}
+/* /HOME PAGE SECTION3 CSS */
+
+
+/* HOME PAGE SECTION4 CSS */
+.section-four{
+    width: 100%;
+    height: auto;
+    margin: 6rem 0;
+}
+
+.section-four .container{
+    padding: 0 5rem;
+}
+
+.section-four .flex-column{
+    gap: 1.5rem;
+}
+
+.section-four .grid-row{
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+}
+
+.section-four .slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.section-four .slider-container .flex-row{
+    justify-content: space-between;
+}
+.section-four .content span{
+ line-height: 1.5rem;
+ color: #212121;
+ cursor: pointer;
+}
+.section-four .content span:nth-of-type(1){
+    font-weight: bold;
+    
+}
+.section-four .content span:nth-of-type(2){
+    font-weight: 300;
+   
+}
+
+.section-four .slider-container .icon{
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    transform-origin: 0.3s;
+}
+
+.section-four .slider-container .icon.icon:hover{
+   background: #e5e7eb;
+}
+
+/* /HOME PAGE SECTION4 CSS */
+
+/* HOME PAGE SECTION5 CSS */
+.section-fivth{
+    width: 100%;
+    height: auto;
+    margin: 6rem 0;
+}
+/* /HOME PAGE SECTION5 CSS */
+
+
+/* HOME PAGE SECTION6 CSS */
+.section-sixth{
+    width: 100%;
+    height: auto;
+    margin: 6rem 0;
+}
+
+.section-sixth .container{
+    padding: 0 5rem;
+}
+
+.section-sixth .flex-column:first-child{
+    gap: 2rem;
+}
+
+.section-sixth .grid-row{
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.section-sixth .grid-row .flex-column{
+    gap: 1rem;
+}
+
+.section-sixth .grid-row .flex-column span:nth-of-type(1){
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212121;
+}
+
+.section-sixth .grid-row .flex-column span:nth-of-type(2){
+    font-size: .875rem;
+    line-height: 1.3rem;
+    color: #212121;
+}
+
+.section-sixth .grid-row .flex-column img{
+    width: 3.75rem;
+    height: 3.75rem;
+
+}
+
+.section-sixth .flex-column hr{
+    width: 2.5rem;
+    color: black;
+}
+/* /HOME PAGE SECTION6 CSS */
+
+/* HOME PAGE SECTION7 CSS */
+.section-seventh{
+    width: 100%;
+    height: auto;
+    margin: 6rem 0;
+}
+
+.section-seventh .container{
+    padding: 0 5rem;
+}
+
+.section-seventh .grid-row{
+    grid-template-columns: 40% 58%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-seventh .content-container{
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+}
+
+.section-seventh .ml{
+    justify-content: flex-start;
+}
+
+.section-seventh .column img{
+    height: 45vh;
+}
+.section-seventh .content-container h1{
+    text-transform: uppercase;
+}
+
+.section-seventh .content-container span{
+    color: #212121;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+/* /HOME PAGE SECTION7 CSS */
