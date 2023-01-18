@@ -36,28 +36,17 @@ window.addEventListener("scroll" , ()=>{
 
 
 // for mobile navigation
-const menuBar = document.querySelector("#menuBar")
+const menuBar = document.querySelector("#toggle")
 const openNav= document.querySelector('.navMenu')
-// const blurBg= document.querySelector('body')
-
 menuBar.addEventListener('click', ()=>{
 openNav.classList.toggle('active')
-// blurBg.classList.toggle('active')
-});
-
-const click = document.querySelector(".main-section")
-const closeNav= document.querySelector('.navMenu')
-
-click.addEventListener('click', ()=>{
-closeNav.classList.toggle('active')
+openSlab.classList.toggle('active')
 });
 
 
-
-// open items in mobnav
-const openItem = document.querySelector('.new')
+// for open nav items
+const openNavItems = document.querySelector('.new')
 const openSlab = document.querySelector('.newSection')
-
-openItem.addEventListener('click',()=>{
+openNavItems.addEventListener('click', ()=>{
 openSlab.classList.toggle('active')
 });

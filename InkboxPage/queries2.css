@@ -1,6 +1,6 @@
 /* HEADER */
 /* MEDIA QUERY FOR tablet DESIGN */
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width:680px) and (max-width:1024px) {
     .secondaryNav {
         position: relative;
     }
@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    left: -50%;
+    left: -70%;
     height: 100vh;
     justify-content: space-between;
     background: white;
@@ -23,12 +23,6 @@
         left: 0%;
         box-shadow: 6px 0px 10px rgb(0 0 0 / 30%);
     }
-    /* body{
-        filter: blur(0px);
-    }
-    body.active{
-        filter: blur(5px);
-    } */
     .navMenu nav > ul {
     display: flex;
     align-items: center;
@@ -83,7 +77,48 @@
         background-color: white;
         border-top: 1px solid #cbcbcb;
     }
-    .new:hover .newSection {
+    .newSection.active {
+        top: 9%;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+        overflow-y: scroll;
+        display: block;
+    }
+    .shop:hover .newSection {
+        top: 9%;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+        overflow-y: scroll;
+    }
+    .custom:hover .newSection {
+        top: 9%;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+        overflow-y: scroll;
+    }
+    .tattoo:hover .newSection {
+        top: 9%;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+        overflow-y: scroll;
+    }
+    .sale:hover .newSection {
+        top: 9%;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+        overflow-y: scroll;
+    }
+    .categories:hover .newSection {
         top: 9%;
         opacity: 1;
         visibility: visible;
