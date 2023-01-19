@@ -128,6 +128,10 @@ header{
 header>section{
     background-color: #f4f5f7;
 }
+
+.mobile-nav{
+    display: none;
+}
 .megaMenu {
   justify-content: space-between;
   gap: 1rem;
@@ -165,7 +169,7 @@ gap: 1.2rem;
 .secondaryNav .logo img{
     width: 10rem;
 }
-.secondaryNav >i{
+#menuBar{
     font-family: FontAwesome;
     font-size: 1.6rem;
     display: none;
@@ -216,10 +220,13 @@ gap: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+
 }
 #offer{
     display: none;
 }
+
 .navMenu nav>ul>li>a{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -276,7 +283,7 @@ gap: 1.2rem;
 .new:hover  .newSection {
  top: 100%;
  opacity: 1;
- visibility: visible;
+ visibility: visible;   
 }
  .newSection >.header-span> ul > span{
     text-transform: uppercase;
@@ -648,8 +655,7 @@ gap: 1.2rem;
 
 
 /* --------------------------FOOTER-CSS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
- .great{
+.great{
     font-size: 1.5rem;
 }
 .footer h4{
@@ -774,7 +780,7 @@ font-weight: 500;
     padding: 1rem 0;
     display: flex;
     margin-top: 5vh;
-    height: 10vh;
+ 
    justify-content: space-between;
 }
 .cite-logo{
@@ -835,3 +841,378 @@ font-weight: 500;
 .media-cite{
     display: none;
 }
+
+
+/* -----------------PRODUCT-INKBOX */
+.product{
+    margin-top: 10vh;
+    padding: 2rem;
+      box-sizing: border-box;
+}
+.product .container .grid-row{
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.product .left-column .product-img{
+    max-width: 622px;
+}
+.product .left-column .product-img img{
+   width: 100%;
+}
+.product .left-column .grid-row .image{
+    margin-top: 2rem;
+    height: 126px;
+    width: 94px;
+    border: 1px solid #212121;
+    overflow: hidden;
+}
+.product .left-column .grid-box {
+    display: grid;
+    margin-top: 1rem;
+    width: 80%;
+    grid-template-columns: repeat(4 ,1fr);
+gap: 1 !important;
+}
+.product .grid-box .image .productimg{
+    width: 92px;
+    height: 124px;
+    cursor: pointer;
+    opacity: 0.5;
+   
+    transition: all 0.3s ease-in-out;
+}
+.product .grid-box .image .productimg:hover{
+    opacity: 1;
+}
+.product .grid-box .image .productimg--active{
+    opacity: 1;
+   
+}
+.product .right-column{
+    max-width: 622px;
+}
+.product .right-column .head{
+    width: 100%;
+}
+.product .right-column .buy-section{
+    width: 100%;
+}
+.product .right-column .head p{
+    font-size: 16px;
+    margin-top: 1rem;
+}
+.product .right-column .head a{
+    color: #212121;
+    margin-left: .5rem;
+    font-weight: 500;
+}
+.product .right-column .head h3{
+    margin: 1.5rem 0 1.7rem 0;
+}
+.product .right-column .buy-section h3{
+    margin: 1.5rem 0 .5rem 0;
+}
+.product .right-column .buy-section h5{
+  margin-top: 1rem;
+}
+.counter{
+    height: 35px;
+    width: 65px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.product .right-column .button{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin-bottom: 1rem;
+}
+.product .right-column .button .black-btn{
+    height:40px;
+    border: none;
+   background-color: #212121;
+   color: #fff;
+   border-radius: 5px;
+   font-weight:bold;
+   transition: all 0.3s ease-in-out;
+   opacity: 1;
+}
+.product .right-column .button .black-btn:hover{
+opacity: 0.5;
+}
+.product .right-column .button .white-btn{
+    height:40px;
+   background-color:#fff;
+   color:  #212121;
+   border-radius: 5px;
+   border: 0;
+   box-shadow: 0px 3px 3px rgb(207, 207, 207);
+   font-weight: 800;
+   transition: all 0.3s ease-in-out;
+   opacity: 1;
+    
+}
+.product .right-column .button .white-btn:hover{
+    background-color: #b9b9b9;
+}
+.offers{
+    margin-top: 2rem;
+padding: 1.5rem;
+    text-align: center;
+background-color: #f9fafb;
+}
+.offers p{
+    font-size: 14px;
+    margin-top: .5rem;
+}
+.product .right-column .grid-row{
+    grid-template-columns: 1fr;
+gap: 1rem;
+margin-top: 2rem;
+}
+.row{
+    margin-bottom: 1rem;
+    height:60px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background-color: #f9fafb;
+}
+.product .right-column .row button{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+}
+#plus1.active{
+    display: none;
+}
+#minus1{
+    display:none;
+}
+#minus1.active{
+    display:block;
+}
+#plus2.active{
+    display: none;
+}
+#minus2{
+    display:none;
+}
+#minus2.active{
+    display:block;
+}
+#plus3.active{
+    display: none;
+}
+#minus3{
+    display:none;
+}
+#minus3.active{
+    display:block;
+}
+#plus4.active{
+    display: none;
+}
+#minus4{
+    display:none;
+}
+#minus4.active{
+    display:block;
+}
+.product .right-column .row button i{
+    font-size: 16px;
+}
+
+
+.block-items1{
+    display:none;
+    margin: -1rem 0 1.5rem 1.5rem;
+    color: #626262;
+    line-height: 1.7rem;
+}
+.block-items1.active{
+     display: block;
+}
+.block-items2{
+    display:none;
+    margin: -1rem 0 1.5rem 1.5rem;
+    color: #626262;
+    line-height: 1.7rem;
+}
+.block-items2.active{
+     display: block;
+}
+.block-items3{
+    display:none;
+    margin: -1rem 0 1.5rem 1.5rem;
+    color: #626262;
+    line-height: 1.7rem;
+}
+.block-items3.active{
+     display: block;
+}
+.block-items4{
+    display:none;
+    margin: -1rem 0 1.5rem 1.5rem;
+    color: #626262;
+    line-height: 1.7rem;
+}
+.block-items4.active{
+     display: block;
+}
+/* shop-similar section */
+.owl-next{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    font-size: 2rem;
+}
+.owl-prev{
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    border: none;
+    padding: 0!important;
+    font-size: 3rem !important;
+}
+
+.shop-similar{
+       margin-top: 10vh;
+       padding: 1rem 5rem;
+  max-width: 1900px;
+
+}
+.shop-similar .header{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.shop-similar .slide-box{
+    width: 274px;
+    height: 430px;
+ 
+}
+.shop-similar .slide-box .image{
+    width: 270px;
+   height: 340px;
+    overflow: hidden;
+    transition: all 0s ease-in-out;
+}
+.shop-similar .slide-box .image:hover{
+    border: 2px solid rgb(145, 145, 145);
+}
+.shop-similar .slide-box img{
+max-width: 270px;
+    height: 340px;
+    transition: all 0.3s ease-in-out;
+}
+.shop-similar .slide-box img:hover{
+ transform: scale(1.1);
+
+}
+.shop-similar .slide-box .cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: .5rem;
+    padding: 0 .5rem;
+}
+
+.shop-insta{
+    margin: 10vh 0;
+}
+.shop-insta .container{
+    max-width: 1280px;
+}
+.shop-insta .container .header p{
+    margin: 1rem 0;
+
+}
+.shop-insta .grid{
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap :1rem;
+}
+.shop-insta .grid-image1{
+ width: 100%;
+ aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/InkboxPage/images/4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shop-insta .grid-image2{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-image: url(/InkboxPage/images/2\ \(1\)\ -\ Copy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shop-insta .grid-image3{
+     display: flex;
+     aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;;
+    background-image: url(/InkboxPage/images/2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shop-insta .grid-image4{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-image: url(/InkboxPage/images/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.onhover{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.8);
+ opacity: 0;
+    transition:all 0.3s ease-in-out;
+   
+}
+.onhover:hover{
+    opacity: 1;
+}
+.onhover i{
+font-size: 1.5rem;
+color: #fff;
+}
+.shopbtn{
+    padding: .35rem .45rem;
+    border: none;
+}
+
+
+/* -----------------//PRODUCT-INKBOX */
+
+
+/* ---------------------//SECTION-PRODUCT */

@@ -1,142 +1,210 @@
 /* HEADER */
 /* MEDIA QUERY FOR tablet DESIGN */
-@media (min-width:680px) and (max-width:1024px) {
-    .secondaryNav {
-        position: relative;
-    }
+@media  (max-width:1024px) {
     .navMenu{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    left: -70%;
-    height: 100vh;
-    justify-content: space-between;
-    background: white;
-    width: 25rem;
-    top: 0%;
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
-
-    }
-    .navMenu.active{
-        left: 0%;
-        box-shadow: 6px 0px 10px rgb(0 0 0 / 30%);
-    }
-    .navMenu nav > ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: absolute;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    }
-    .navMenu nav>ul>li>a {
-        font-size: 1rem;
-    }
-    .navMenu nav>ul>li {
-        padding: 1.5rem 2.5rem;
-        width: 100%;
-        border-bottom: 1px solid rgb(209, 206, 206);
-        white-space: nowrap;
-    }
-    .navMenu nav>ul>li:hover {
-        border-bottom: 0px solid transparent;
-    }
-    .secondaryNav .icons>i{
         display: none;
     }
-    .secondaryNav >i{
+    .mobile-nav{
+       display: block;
+    }
+    .mobile-nav>img {
+        width: 15rem;
+        height: 15rem;
+      }
+      #menuBar{
         display: block;
-    }
-    
-    #offer{
-        display:block;
-        background-color: #212121;
-        color: white;
-        font-weight: bold;
-        font-size: 1.3rem;
-    }
-    .newSection {
-        position: absolute;
-        top: 9%;
-        padding: 2rem 2.5rem;
-        justify-content: center;
-        z-index: 1;
-        visibility: hidden;
-        opacity: 0;
-        width: 100%;
-        flex-direction: column;
-        left: 100%;
-        gap: 2rem;
-        min-height: 100vh;
-        transition: all 0.3s ease;
-        box-shadow:none;
-        background-color: white;
-        border-top: 1px solid #cbcbcb;
-    }
-    .newSection.active {
-        top: 9%;
-        opacity: 1;
-        visibility: visible;
-        left: 0;
-        transition: all 0.4s ease-in-out;
-        overflow-y: scroll;
-        display: block;
-    }
-    .shop:hover .newSection {
-        top: 9%;
-        opacity: 1;
-        visibility: visible;
-        left: 0;
-        transition: all 0.4s ease-in-out;
-        overflow-y: scroll;
-    }
-    .custom:hover .newSection {
-        top: 9%;
-        opacity: 1;
-        visibility: visible;
-        left: 0;
-        transition: all 0.4s ease-in-out;
-        overflow-y: scroll;
-    }
-    .tattoo:hover .newSection {
-        top: 9%;
-        opacity: 1;
-        visibility: visible;
-        left: 0;
-        transition: all 0.4s ease-in-out;
-        overflow-y: scroll;
-    }
-    .sale:hover .newSection {
-        top: 9%;
-        opacity: 1;
-        visibility: visible;
-        left: 0;
-        transition: all 0.4s ease-in-out;
-        overflow-y: scroll;
-    }
-    .categories:hover .newSection {
-        top: 9%;
-        opacity: 1;
-        visibility: visible;
-        left: 0;
-        transition: all 0.4s ease-in-out;
-        overflow-y: scroll;
-    }
-    .navMenu #downArr{
-        display: none;
-    }
-    .navMenu #rightArr{
-        display: block;
-        margin-left: 0.5rem;
+      }
+      .arrow span>i {
+        float: right;
+        font-size: 1.2rem;
         cursor: pointer;
+        
+      }
+      .mobile-nav {
+        position: absolute;
+        left: -100%;
+        top: 0%;
+        width: 20rem;
+        height: 100vh;
+        background-color: white;
+        overflow-y: scroll;
+        z-index: 1;
+        transition: all 0.2s ease;
+      }
+      .mobile-nav.active {
+        left: 0%;
+        height: 100vh;
+      }
+      .heading {
+        background-color: #212121;
+        width: 100%;
+        position: sticky;
+        top: 0%;
+      }
+      .heading h1 {
+        color: #979ea9;
+        padding: 1rem 2rem;
+        font-size: 0.915rem;
+        font-family: roboto;
+      }
+      
+      .sub-heading {
+        background-color: #212121;
+        width: 100%;
+        position: sticky;
+          top: 0;
+      }
+      .sub-heading h1 {
+        font-family: roboto;
+        color: #979ea9;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        
+      }
+      .nav-links > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .nav-links > ul > li > span {
+        color: white;
         display: inline-block;
-    }
+        padding: 1rem 2rem;
+        border-bottom: 1px solid grey;
+        width: 100%;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .nav-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0rem 2rem;
+      }
+      
+      .nav-items > span {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .nav-items span:last-child::after{
+      content: "\f178";
+      font-family: FontAwesome;
+      font-style: normal;
+      margin-left: 1rem;
+      }
+      
+      .slider {
+        visibility: hidden;
+        position: absolute;
+        top: 0%;
+        left: 110%;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: white;
+        transition: all 0.4s ease;
+      }
+      .slider.active {
+        visibility: hidden;
+        position: absolute;
+        top: 0%;
+        left: 110%;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: white;
+        transition: all 0.4s ease;
+      }
+
+      
+      #new:hover .slider {
+        visibility: visible;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      #shop:hover .slider {
+        visibility: visible;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      #custom:hover .slider {
+        visibility: visible;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      #tattoo:hover .slider {
+        visibility: visible;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      #sale:hover .slider {
+        visibility: visible;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      #categories:hover .slider {
+        visibility: visible;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      /* scroll bar */
+      ::-webkit-scrollbar {
+        width: 0px;
+        opacity: 0.7;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: rgb(158, 156, 156);
+        border-radius: 10px;
+      }
 }
 /* //MEDIA QUERY FOR tablet DESIGN */
+
+
+
+/* //MEDIA QUERY FOR mobile DESIGN */
+
+@media (max-width:700px){
+    .secondaryNav .icons>i {
+        display: none;
+    }
+}
+/* //MEDIA QUERY FOR mobile DESIGN */
 /*------------------// HEADER--------------------- */
 
 
@@ -353,18 +421,18 @@
         width: 40%;
       display: flex;
     }
-
+.r-cite{
+    display: flex;
+}
     .media-cite{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content:center;
     }
  
 }
 @media screen and (max-width:770px){
-    .footer{
-        height: 102vh;
-    }
+   
     .footer-col .header{
         margin-bottom: 2rem;
      }
@@ -409,3 +477,114 @@
     }
 }
 /*//-------------------- FOOTER ------------------*/
+
+/* media-queries  */
+/* ---------------------SECTION-PRODUCT */
+
+            
+@media screen and (max-width:1024px){
+    .product .left-column .grid-box {
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    } 
+
+}
+@media screen and (max-width:770px){
+    .product .left-column .grid-box {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr;
+    } 
+    .shop-insta .grid{
+        width: 100%;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        gap :1rem;
+    }
+    .shop-insta{
+        margin: 10vh 0;
+    }
+    .shop-similar{
+        margin-top: 20vh;
+        padding: 1rem 0rem;
+    }
+    .shop-similar .slide-box .image{
+        height: 237px;
+        width: 190px;
+        overflow: hidden;
+    }
+    .shop-similar .slide-box .image img{
+        height: 233px;
+        width: 186px;
+    }
+    .shop-similar .slide-box i{
+      margin-right: 6rem;
+    }
+}
+@media screen and (max-width:650px){
+   
+    .product .container .grid-row{
+        grid-template-columns: 1fr;
+    gap: 0rem;
+    }
+  .row{
+    margin-bottom: 1rem;
+  }
+  .product .left-column .grid-row {
+    margin-top: 1rem;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+} 
+.product .right-column{
+    margin-top: -5rem;
+}
+.product{
+    margin-top: 10vh;
+    padding: 1rem 0;
+      box-sizing: border-box;
+}
+.shop-similar{
+    margin-top: 20vh;
+    padding: 1rem 2rem;
+}
+
+
+      }
+      @media screen and (max-width:450px){
+        .product .left-column .grid-box {
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 1fr;
+        } 
+        .product .left-column{
+            margin-bottom: 15vh;
+        }
+    }
+/* SHOP-SIMILAR */
+@media screen and (max-width:1300px){
+    .shop-similar .slide-box .image{
+        height: 237px;
+        width: 190px;
+        overflow: hidden;
+    }
+    .shop-similar .slide-box .image img{
+        height: 233px;
+        width: 186px;
+    }
+    .shop-similar .slide-box i{
+      margin-right: 6rem;
+    }
+    .owl-next{
+        position: absolute;
+        top: 20%;
+        right: 0;
+        font-size: 2rem;
+    }
+    .owl-prev{
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+
+}
+
+/* //SHOP-SIMILAR */

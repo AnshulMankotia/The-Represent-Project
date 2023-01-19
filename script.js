@@ -36,12 +36,20 @@ window.addEventListener("scroll" , ()=>{
 
 
 // for mobile navigation
-const menuBar = document.querySelector("#toggle")
-const openNav= document.querySelector('.navMenu')
-menuBar.addEventListener('click', ()=>{
+const menuBar = document.querySelector("#menuBar");
+const openNav = document.querySelector('.mobile-nav')
+menuBar.addEventListener('click',()=>{
 openNav.classList.toggle('active')
-openSlab.classList.toggle('active')
 });
+
+
+
+
+const click = document.querySelector('.arrow')
+const openSlider = document.querySelector('.slider')
+click.addEventListener('click',()=>{
+    openSlider.classList.toggle('active')
+})
 
 
 // for open nav items
@@ -49,4 +57,10 @@ const openNavItems = document.querySelector('.new')
 const openSlab = document.querySelector('.newSection')
 openNavItems.addEventListener('click', ()=>{
 openSlab.classList.toggle('active')
+});
+
+
+const navBack = document.querySelector('.sub-heading')
+navBack.addEventListener('click',()=>{
+    openSlider.classList.toggle('active')
 });
