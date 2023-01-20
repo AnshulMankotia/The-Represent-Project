@@ -116,6 +116,9 @@ box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 /* =============/GENERAL=========== CSS */
 
 /* HEADER */
+main.overlay {
+    filter: blur(5px);
+}
 header{
     position: fixed;
     left: 0%;
@@ -196,7 +199,8 @@ gap: 1.2rem;
 }
 .secondaryNav .icons span{
     margin-left: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-family: 'Roboto';
 }
 .secondaryNav .icons>i{
     background-color:transparent;
@@ -216,15 +220,16 @@ gap: 1.2rem;
     background-color: rgb(236, 236, 236);
 }
 /* //secondary nav */
+#offer{
+    display: none;
+}
+
 .navMenu nav > ul {
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
 
-}
-#offer{
-    display: none;
 }
 
 .navMenu nav>ul>li>a{
@@ -1211,6 +1216,33 @@ color: #fff;
     border: none;
 }
 
+.reward-btn{
+    position: fixed;
+    top:93%;
+    left: 1%;
+    z-index: 998;
+}
+.reward-btn a>button{
+    background-color: #212121;
+    border: none;
+    color: white;
+    font-size: 0.815rem;
+    box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 50%);
+    padding: 0.815rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+/* reward button styling */
+.reward-btn a>button:hover{
+    background-color: white;
+    color: #212121;
+}
+.reward-btn a>button>span{
+    margin-left: 0.5rem;
+}
+/* reward button styling */
 
 /* -----------------//PRODUCT-INKBOX */
 

@@ -156,6 +156,91 @@ i {
   text-align: center;
   outline: 1px solid rgb(238, 233, 233);
 }
+/* speed toggle nav */
+.bolt-icon{
+  position: relative;
+}
+#speedNav{
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 27px;
+  background: white;
+  opacity: 1;
+}
+#speedNav:hover{
+  opacity: 0.7;
+}
+#speedNav.active{
+opacity: 0;
+}
+#speedNav1{
+  position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.toggle-nav{
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 1.2rem;
+}
+.toggle-nav a{
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+.toggle-nav li{
+  padding: 0.4rem;
+}
+
+.nav-toggle{
+  display: none;
+}
+.nav-toggle.active{
+  display: block;
+}
+/* speed toggle nav */
+
+ /* seach bar styling  */
+.search-bar{
+  position: relative;
+  display: none;
+  min-height: 100vh;
+}
+.search-bar.active{
+  display: block;
+}
+.search-bar::before{
+content: "\f002";
+font-family: FontAwesome;
+position: absolute;
+top: 1%;
+left: 0.5%;
+font-size: 1.2rem;
+cursor: pointer;
+}
+.search-bar::after{
+content: "\f00d";
+font-family: FontAwesome;
+position: absolute;
+top: 1%;
+right: 0.5%;
+font-size: 1.2rem;
+cursor: pointer;
+}
+.search-bar input{
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid #eee9e9;
+  outline: none;
+}
+.search-bar input{
+  padding-left: 2rem;
+}
+/* //seach bar styling */
 
 /* Header styling ended */
 
