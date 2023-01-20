@@ -7,15 +7,7 @@ openNav.classList.toggle('active')
 
 
 
-
-const click = document.querySelector('.arrow')
-const openSlider = document.querySelector('.slider')
-click.addEventListener('click',()=>{
-    openSlider.classList.toggle('active')
-})
-
-
-// for open nav items
+// FOR OPENING NAV ITEMS
 const openNavItems = document.querySelector('.new')
 const openSlab = document.querySelector('.newSection')
 openNavItems.addEventListener('click', ()=>{
@@ -23,12 +15,15 @@ openSlab.classList.toggle('active')
 });
 
 
-const navBack = document.querySelector('.sub-heading')
-navBack.addEventListener('click',()=>{
-    openSlider = document.querySelector('.slider')
-});
 
+// FOR OPENING SUB-NAV ITEMS
+const click = document.querySelector('.arrow');
+const sliderBack = document.querySelector('.sub-heading');
 
+const openSlider = document.querySelector('.slider')
+click.addEventListener('click',()=>{
+    openSlider.classList.toggle('active')
+})
 
 
 const Blurs = document.querySelectorAll('.hovering');
