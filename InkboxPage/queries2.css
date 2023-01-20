@@ -377,6 +377,39 @@
         text-align: center;
     }
 }
+/* -------------------------FAQ-SECTION */
+@media screen and (max-width:1024px){
+    .accordion{
+        width: 100%; 
+        padding: 0rem ;
+       background-color: #f4f5f7;
+    }
+    .accordion .contentBox{
+        position: relative;
+        margin: 50px 0px;
+          width: 100%;
+      }
+    
+}
+@media screen and (max-width:690px){
+    .accordion .flex-row{
+      
+        flex-direction: column;
+    }
+    .accordion h3{
+        text-align: center;
+    }
+    .accordion .flex-row{
+    align-items: center;
+    }
+    .accordion .contentleft{
+        width: 100%;
+    }
+    .accordion .contentright{
+        width: 100%;
+    }
+}
+/* -------------------------//FAQ-SECTION */
 /*//---------------- MAIN--------------------- */
 
 
@@ -486,11 +519,15 @@
     .product .left-column .grid-box {
         grid-template-columns: repeat(3 ,1fr);
         grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+        gap: 1rem;
     } 
 
 }
 @media screen and (max-width:770px){
+    .product .container .grid-row{
+        grid-template-columns: 1fr;
+        gap: 0rem;
+    }
     .product .left-column .grid-box {
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 1fr 1fr;
@@ -506,45 +543,34 @@
         margin: 10vh 0;
     }
     .shop-similar{
-        margin-top: 20vh;
+        margin-top: 4rem;
         padding: 1rem 0rem;
     }
-    .shop-similar .slide-box .image{
-        height: 237px;
-        width: 190px;
-        overflow: hidden;
-    }
-    .shop-similar .slide-box .image img{
-        height: 233px;
-        width: 186px;
-    }
-    .shop-similar .slide-box i{
-      margin-right: 6rem;
-    }
+  
 }
 @media screen and (max-width:650px){
    
     .product .container .grid-row{
         grid-template-columns: 1fr;
-    gap: 0rem;
+        gap: 0rem;
     }
   .row{
-    margin-bottom: 1rem;
+       margin-bottom: 1rem;
   }
   .product .left-column .grid-row {
-    margin-top: 1rem;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 } 
 .product .right-column{
     margin-top: -5rem;
 }
 .product{
-    margin-top: 10vh;
+    margin-top: 7rem;
     padding: 1rem 0;
       box-sizing: border-box;
 }
 .shop-similar{
-    margin-top: 20vh;
+    margin-top: 4rem;
     padding: 1rem 2rem;
 }
 
@@ -588,3 +614,5 @@
 }
 
 /* //SHOP-SIMILAR */
+
+

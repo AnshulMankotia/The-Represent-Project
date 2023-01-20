@@ -1,12 +1,12 @@
 
-// const navIcon=document.querySelector('.navIcon');
-// const navIcon2=document.querySelector('.xmark');
-// const navLinks=document.querySelector('.mobile-navs')
-// navIcon.addEventListener('click',() => {
-//     navIcon.classList.toggle('active')
-//     navIcon2.classList.toggle('active')
-//     navLinks.classList.toggle('active')
-// });
+const navIcon=document.querySelector('.navIcon');
+const navIcon2=document.querySelector('.xmark');
+const navLinks=document.querySelector('.mobile-navs')
+navIcon.addEventListener('click',() => {
+    navIcon.classList.toggle('active')
+    navIcon2.classList.toggle('active')
+    navLinks.classList.toggle('active')
+});
 
 
 // for back to top button
@@ -35,32 +35,6 @@ window.addEventListener("scroll" , ()=>{
 });
 
 
-// for mobile navigation
-const menuBar = document.querySelector("#menuBar");
-const openNav = document.querySelector('.mobile-nav')
-menuBar.addEventListener('click',()=>{
-openNav.classList.toggle('active')
-});
 
 
 
-
-const click = document.querySelector('.arrow')
-const openSlider = document.querySelector('.slider')
-click.addEventListener('click',()=>{
-    openSlider.classList.toggle('active')
-})
-
-
-// for open nav items
-const openNavItems = document.querySelector('.new')
-const openSlab = document.querySelector('.newSection')
-openNavItems.addEventListener('click', ()=>{
-openSlab.classList.toggle('active')
-});
-
-
-const navBack = document.querySelector('.sub-heading')
-navBack.addEventListener('click',()=>{
-    openSlider.classList.toggle('active')
-});
