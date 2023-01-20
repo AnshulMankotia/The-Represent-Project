@@ -1,8 +1,12 @@
 /* HEADER */
 /* MEDIA QUERY FOR tablet DESIGN */
 @media  (max-width:1024px) {
+    main.overlay {
+        filter: blur(0px);
+    }
     .navMenu{
-        display: none;
+        overflow-x: scroll;
+        display: block;
     }
     .mobile-nav{
        display: block;
@@ -14,9 +18,12 @@
       #menuBar{
         display: block;
       }
+      .arrow>span{
+        color: #212121;
+      }
       .arrow span>i {
         float: right;
-        font-size: 1.2rem;
+        font-size: 0.815rem;
         cursor: pointer;
         
       }
@@ -30,6 +37,7 @@
         overflow-y: scroll;
         z-index: 1;
         transition: all 0.2s ease;
+        overflow-x: hidden;
       }
       .mobile-nav.active {
         left: 0%;
@@ -52,7 +60,7 @@
         background-color: #212121;
         width: 100%;
         position: sticky;
-          top: 0;
+        top: 0;
       }
       .sub-heading h1 {
         font-family: roboto;
@@ -61,10 +69,13 @@
         font-size: 1.1rem;
         
       }
+      .nav-links{
+      margin-top: 1rem;
+      }
       .nav-links > ul {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
       }
       .nav-links > ul > li > span {
         color: white;
@@ -105,18 +116,6 @@
         background-color: white;
         transition: all 0.4s ease;
       }
-      .slider.active {
-        visibility: hidden;
-        position: absolute;
-        top: 0%;
-        left: 110%;
-        width: 100%;
-        height: 100%;
-        overflow-y: scroll;
-        background-color: white;
-        transition: all 0.4s ease;
-      }
-
       
       #new:hover .slider {
         visibility: visible;
@@ -179,19 +178,48 @@
         gap: 2rem;
       }
       /* scroll bar */
-      ::-webkit-scrollbar {
+      .mobile-nav ::-webkit-scrollbar {
         width: 0px;
         opacity: 0.7;
       }
       
-      ::-webkit-scrollbar-track {
+      .mobile-nav ::-webkit-scrollbar-track {
         background: transparent;
       }
       
-      ::-webkit-scrollbar-thumb {
+      .mobile-nav ::-webkit-scrollbar-thumb {
         background: rgb(158, 156, 156);
         border-radius: 10px;
       }
+      .secondaryNav .icons>i {
+        display: none;
+    }
+    .navMenu #downArr {
+        display: none;
+    }
+    .navMenu nav > ul {
+        justify-content: flex-start;
+    }
+    /* disabled hovering effects */
+    .new:hover  .newSection {
+       display: none;  
+       }
+       .shop:hover  .newSection {
+        display: none;
+       }
+       .custom:hover  .newSection {
+        display: none;
+       }
+       .tattoo:hover  .newSection {
+        display: none;
+       }
+       .sale:hover  .newSection {
+        display: none;
+       }
+       .categories:hover  .newSection {
+        display: none;
+       }
+    
 }
 /* //MEDIA QUERY FOR tablet DESIGN */
 
@@ -199,9 +227,29 @@
 
 /* //MEDIA QUERY FOR mobile DESIGN */
 
-@media (max-width:700px){
+@media (max-width:710px){
+    .secondaryNav {
+        display: grid;
+        grid-template-columns:repeat(7,1fr);
+    }
+.secondaryNav .search-bar{
+    grid-row: 2;
+    grid-column: 1/8;
+    width: 100%;
+}
+.secondaryNav>.icons {
+    justify-content: flex-end;
+    grid-column: 3/8;
+}
     .secondaryNav .icons>i {
         display: none;
+    }
+    .navMenu nav > ul {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .navMenu nav>ul>li {
+        padding: 0rem 0rem 1rem 0rem;
     }
 }
 /* //MEDIA QUERY FOR mobile DESIGN */
