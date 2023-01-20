@@ -7,6 +7,7 @@ menuBar.addEventListener('click',()=>{
 openNav.classList.toggle('active')
 });
 
+// FOR BLURRING BG WHILE HOVERING ON NAV-LINKS
 
 const Blurs = document.querySelectorAll('.hovering');
 const body = document.querySelector('main');

@@ -209,6 +209,7 @@
     .secondaryNav {
         display: grid;
         grid-template-columns:repeat(7,1fr);
+        padding: 1rem 0rem;
     }
 .secondaryNav .search-bar{
     grid-row: 2;
@@ -228,6 +229,9 @@
     }
     .navMenu nav>ul>li {
         padding: 0rem 0rem 1rem 0rem;
+    }
+    .primaryNav{
+        display: none;
     }
 }
 /* //MEDIA QUERY FOR mobile DESIGN */
