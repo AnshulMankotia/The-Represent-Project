@@ -1,19 +1,26 @@
-// background hover //
 
 // for mobile navigation
 const menuBar = document.querySelector("#menuBar");
-const openNav = document.querySelector('.mobile-nav')
+const openNav = document.querySelector('.mobile-nav');
+const removeNav = document.querySelector('main');
+
 menuBar.addEventListener('click',()=>{
-openNav.classList.toggle('active')
+openNav.classList.add('active');
 });
 
-// FOR BLURRING BG WHILE HOVERING ON NAV-LINKS
+// to remove mobile nav from screen while click on body
+removeNav.addEventListener('click',()=>{
+    openNav.classList.remove('active');
+    });
 
+
+
+
+// FOR BLURRING BG WHILE HOVERING ON NAV-LINKS
 const Blurs = document.querySelectorAll('.hovering');
 const body = document.querySelector('main');
 
 Blurs.forEach((Blur)=>{
-
 Blur.addEventListener('mouseover',() =>{
     body.classList.add('overlay');
 });
@@ -29,11 +36,6 @@ openNavItems.addEventListener('click',()=>{
 openSlab.classList.toggle('active')
 });
 
-
-const navBack = document.querySelector('.sub-heading')
-navBack.addEventListener('click',()=>{
-    openSlider.classList.toggle('active')
-});
 
 // FOR OPENING SUB-NAV ITEMS
 const click = document.querySelector('.arrow');

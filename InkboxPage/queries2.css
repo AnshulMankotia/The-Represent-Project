@@ -1,6 +1,7 @@
 /* HEADER */
 /* MEDIA QUERY FOR tablet DESIGN */
 @media  (max-width:1024px) {
+                                       
     main.overlay {
         filter: blur(0px);
     }
@@ -81,7 +82,6 @@
         gap: 1rem;
       }
       .nav-items:last-child{
-        border-top: 1px solid #d2d6dc;
         padding: 2rem;
       }
       .nav-links > ul > li > span {
@@ -130,30 +130,60 @@
         display: flex;
         flex-direction: column;
       }
-      
+     
       #new:hover .slider {
         visibility: visible;
         left: 0%;
       }
+      #new .slider:hover{
+        top: 0%;
+        left: 110%;
+      }
+
       #shop:hover .slider {
         visibility: visible;
         left: 0%;
       }
+      #shop .slider:hover{
+        top: 0%;
+        left: 110%;
+      }
+
+
       #custom:hover .slider {
         visibility: visible;
         left: 0%;
       }
+      #custom .slider:hover{
+        top: 0%;
+        left: 110%;
+      }
+
       #tattoo:hover .slider {
         visibility: visible;
         left: 0%;
       }
+      #tattoo .slider:hover{
+        top: 0%;
+        left: 110%;
+      }
+
       #sale:hover .slider {
         visibility: visible;
         left: 0%;
       }
+      #sale .slider:hover{
+        top: 0%;
+        left: 110%;
+      }
+
       #categories:hover .slider {
         visibility: visible;
         left: 0%;
+      }
+      #categories .slider:hover{
+        top: 0%;
+        left: 110%;
       }
       /* scroll bar */
       .mobile-nav ::-webkit-scrollbar {
